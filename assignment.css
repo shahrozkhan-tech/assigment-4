@@ -1,0 +1,22 @@
+:root{--ink:#18242c;--muted:#75828a;--paper:#f0f3f3;--surface:#fff;--line:#dce3e4;--accent:#6e9787}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{min-height:100vh;margin:0!important;padding:clamp(18px,5vw,56px)!important;background:radial-gradient(ellipse at 92% 10%,#dceae4 0,transparent 28%),var(--paper)!important;color:var(--ink)!important;font-family:Georgia,"Times New Roman",serif!important;line-height:1.6}
+body>a,nav a{display:inline-flex;align-items:center;margin:0 6px 12px 0;padding:9px 13px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink);font:12px Arial,sans-serif;text-decoration:none}
+body>a:hover,nav a:hover,body>a:focus-visible,nav a:focus-visible{border-color:var(--accent);color:#456b5c;outline:none}
+nav{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:20px}
+h1,h2,h3{color:var(--ink);font-weight:500;letter-spacing:-.035em}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.05}
+h2{font-size:clamp(24px,4vw,36px)}
+section,article,.container,form,body>div{max-width:1000px;margin:20px auto;padding:clamp(18px,4vw,34px);border:1px solid var(--line);border-radius:6px;background:var(--surface);box-shadow:0 16px 40px #18242c0a}
+p,li{color:#46545a}
+img{max-width:100%;height:auto;border-radius:4px}
+table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;border:1px solid var(--line);background:var(--surface)}
+caption{padding:12px;font-weight:700;text-align:left}
+th,td{padding:12px 15px;border:1px solid var(--line);text-align:left}
+th{background:#e8f0ed;color:var(--ink)}
+fieldset{margin:18px 0;padding:22px;border:1px solid var(--line);border-radius:5px;background:#f8faf8}
+legend{padding:0 8px;color:#527b6b;font-weight:700}
+input,textarea,select{max-width:100%;padding:10px 12px;border:1px solid #cbd4d8;border-radius:3px;background:#fff;color:var(--ink);font:14px Arial,sans-serif}
+button{padding:10px 16px;border:1px solid var(--accent);border-radius:3px;background:var(--accent);color:#fff;font:700 12px Arial,sans-serif;cursor:pointer}
+@media(max-width:600px){table{font-size:13px}th,td{padding:9px}section,article,.container,form,body>div{margin:14px auto}}
